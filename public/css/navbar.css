@@ -1,0 +1,41 @@
+
+body {
+    display: flex;
+  }
+.navbar {
+    flex: 5;
+    border-bottom: 2px solid black;
+    flex-direction: column;
+    width: 300px;
+    /* margin-left: 100px; */
+    border-right: 2px solid #ddd;
+  }
+  
+  
+  #sidebar {
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding-top: 30px;
+    padding: 5px; 
+    
+  }
+
+
+
+.prev-next-list {
+    list-style: none;
+    padding: 0;
+}
+
+.prev-next-list li {
+    margin-bottom: 40px;
+}
+
+.prev-next-list li a {
+    text-decoration: underline;
+    white-space: nowrap; 
+    overflow: hidden;    
+    text-overflow: ellipsis; 
+}
+
+

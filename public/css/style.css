@@ -1,0 +1,410 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.preview{
+  /* width: 100%; height: 100%; padding-left: 225px; padding-right: 225px; padding-top: 48px; padding-bottom: 48px; background: #DDDDDD; justify-content: center; align-items: center; display: inline-flex; */
+}
+
+.bodyEdit{
+  flex: 1 1 0; 
+  align-self: stretch; 
+  padding-top: 45px; 
+  padding-bottom: 41px; 
+  padding-left: 71px; 
+  padding-right: 324px; 
+  background: #C3C3C3; 
+  border-radius: 15px; 
+  overflow: hidden; 
+  justify-content: flex-start; 
+  align-items: center; 
+  display: inline-flex;
+  position: center;
+}
+
+.cv{
+  width: 595px; height: 842px; position: relative; background: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* margin-left: 20px; */
+}
+
+.vertical {
+  width: 595px; height: 190px; background: #004C79;
+  margin-top: 43px;
+  z-index: 1;
+}
+
+.horizontal img{
+  width: 192px; height: 188px; left: 5px; top: 31px; position: absolute; border-radius: 9999px; border: 5px #004C79 solid;
+}
+
+.horizontal{
+  width: 214px; 
+  height: 842px; 
+  background: #002B44;
+  position: absolute;
+  z-index: 2;
+  margin-left: 56px;
+}
+
+.Description{
+  width: 174px; height: 438px; left: 20px; top: 303px; position: absolute;
+}
+
+.Description h1{
+  color: white;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.Description p{
+  position: absolute; color: white; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+
+.Contact{
+  width: 174px; height: 438px; left: 20px; top: 600px; position: absolute;
+}
+
+.Contact h2{
+  color: white;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.Contact h5{
+  top: 30px; position: absolute; color: white; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+
+.Contact h6{
+  top: 45px; position: absolute; color: white; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+
+.Contact h7{
+  top: 95px; position: absolute; color: white; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+
+.line{
+  width: 174px; height: 0px; left: 0px; top: 32px; position: absolute; border: 2px white solid;
+}
+
+.boxName{
+  left: 325px; 
+  top: 60px; 
+  position: absolute;
+}
+
+.name h3{
+  width: 154px; 
+  height: 56px; 
+  left: 0px; 
+  top: 0px; 
+  position: absolute; 
+  color: white; 
+  font-size: 28px; 
+  font-family: Inter; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
+
+.name h4{
+  width: 154px; 
+  height: 56px; 
+  left: 0px; 
+  top: 29px; 
+  position: absolute; 
+  color: white; 
+  font-size: 28px; 
+  font-family: Inter; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
+
+.boxName h5{
+  width: 162px; 
+  height: 50px; 
+  left: 0px; 
+  top: 90px; 
+  position: absolute; 
+  color: white; 
+  font-size: 14px; 
+  font-family: Inter; 
+  font-style: italic; 
+  font-weight: 400; 
+  word-wrap: break-word;
+}
+
+.bodyRight{
+  width: 595px; height: 842px; left: 1px; top: 0px; position: absolute;
+  left: 325px;
+  bottom: 350px;
+}
+
+.bodyRight .headEdu h3 {
+  width: 178px; 
+  height: 66px; 
+  left: 21px; 
+  top: 300px; 
+  position: absolute; 
+  color: black; 
+  font-size: 14px; 
+  font-family: Inter; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
+
+.bodyRight .headEdu img {
+  top: 319px; 
+  left : 3px;
+  position: absolute; 
+}
+
+.bodyEdu{
+  width: 263px; height: 56px;
+}
+
+.bodyEdu h4{
+  left: 1px; 
+  top: 0px; 
+  position: absolute; 
+  color: black; 
+  font-size: 14px; 
+  font-family: Inter; 
+  font-weight: 700; 
+  word-wrap: break-word;
+  top: 325px;
+}
+
+.bodyEdu h5{
+  left: 1px; 
+  top: 0px; 
+  position: absolute; 
+  color: black;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+  top: 345px;
+}
+
+.bodyRight .bodyEdu h6{
+  left: 1px; 
+  top: 0px; 
+  position: absolute; 
+  color: black;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+  top: 365px;
+}
+
+/* WORK */
+
+.bodyRight .headWork h3 {
+width: 178px; 
+height: 66px; 
+left: 21px; 
+top: 450px; 
+position: absolute; 
+color: black; 
+font-size: 14px; 
+font-family: Inter; 
+font-weight: 700; 
+word-wrap: break-word;
+}
+
+.bodyRight .headWork img {
+top: 469px; 
+left : 3px;
+position: absolute; 
+}
+
+.bodyWork{
+width: 263px; height: 56px;
+}
+
+.bodyWork h4{
+left: 1px; 
+top: 0px; 
+position: absolute; 
+color: black; 
+font-size: 14px; 
+font-family: Inter; 
+font-weight: 700; 
+word-wrap: break-word;
+top: 470px;
+}
+
+.bodyWork h5{
+left: 1px; 
+top: 0px; 
+position: absolute; 
+color: black;
+font-size: 14px;
+font-family: Inter;
+font-style: italic;
+font-weight: 400;
+word-wrap: break-word;
+top: 490px;
+}
+
+.bodyRight .bodyWork h6{
+left: 1px; 
+top: 0px; 
+position: absolute; 
+color: black;
+font-size: 12px;
+font-family: Inter;
+font-weight: 400;
+word-wrap: break-word;
+top: 510px;
+}
+
+/* LANGUAGE */
+
+.bodyRight .headBahasa h3 {
+width: 178px; 
+height: 66px; 
+left: 21px; 
+top: 590px; 
+position: absolute; 
+color: black; 
+font-size: 14px; 
+font-family: Inter; 
+font-weight: 700; 
+word-wrap: break-word;
+}
+
+.bodyRight .headBahasa img {
+top: 609px; 
+left : 3px;
+position: absolute; 
+}
+
+.bodyBahasa{
+width: 263px; height: 56px;
+}
+
+.bodyBahasa h4{
+left: 1px; 
+top: 0px; 
+position: absolute; 
+color: black;
+font-size: 14px;
+font-family: Inter;
+font-style: italic;
+font-weight: 400;
+word-wrap: break-word;
+top: 610px;
+}
+
+.bodyBahasa h5{
+left: 1px; 
+top: 0px; 
+position: absolute; 
+color: black;
+font-size: 14px;
+font-family: Inter;
+font-style: italic;
+font-weight: 400;
+word-wrap: break-word;
+top: 630px;
+}
+
+/* SKILLS */
+.bodyRight .headSkill h3 {
+  width: 178px; 
+  height: 66px; 
+  left: 21px; 
+  top: 700px; 
+  position: absolute; 
+  color: black; 
+  font-size: 14px; 
+  font-family: Inter; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
+
+.bodyRight .headSkill img {
+  top: 719px; 
+  left : 3px;
+  position: absolute; 
+}
+
+.bodySkill{
+  width: 263px; height: 56px;
+}
+
+.bodySkill h4{
+  left: 1px; 
+  top: 0px; 
+  position: absolute; 
+  color: black;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+  top: 720px;
+}
+
+.bodySkill h5{
+  left: 1px; 
+  top: 0px; 
+  position: absolute; 
+  color: black;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+  top: 740px;
+}
+
+.headerEdit h1{
+  width: 300px; height: 131px; left: 0px; top: 0px; position: absolute; color: #002B44; font-size: 55px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+
+.headerEdit h2{
+  width: 300px; height: 131px; left: 82px; top: 77px; position: absolute; color: #002B44; font-size: 55px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+
+.headerEdit{
+  width: 382px; height: 208px; position: relative;
+  left : 50px;
+}
+
+/* UPDATE */
+.buttonUpdate{
+width: 188px; height: 143px; position: relative;
+}  
+
+.buttonUpdate .edit{
+width: 188px; 
+height: 58px; 
+padding-top: 15px; 
+padding-bottom: 14px; 
+left: 0px; top: 0px; 
+position: absolute; 
+background: #0380A8; 
+border-radius: 15px; 
+overflow: hidden; 
+justify-content: center; 
+align-items: center; 
+display: inline-flex;
+}
+
+.buttonUpdate .edit .textEdit,
+.buttonUpdate .delete .textEdit{
+color: white; font-size: 24px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+
+.buttonUpdate .delete{
+width: 188px; height: 58px; padding-top: 15px; padding-bottom: 14px; padding-left: 48px; padding-right: 48px; left: 0px; top: 85px; position: absolute; background: #FF0909; border-radius: 15px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex;
+}
+
+

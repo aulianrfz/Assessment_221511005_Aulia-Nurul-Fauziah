@@ -1,0 +1,354 @@
+Atur gaya untuk body dan konten utama
+body {
+    /* background-color: #fefefe; */
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.form-control {
+    border-color: black;
+}
+
+/* Gaya untuk elemen h1 dengan teks "PROFILE" */
+h1 {
+    font-size: 36px; /* Ganti ukuran font sesuai kebutuhan */
+    font-weight: bold; /* Atur ketebalan font sesuai kebutuhan */
+    color: #333; /* Atur warna teks sesuai kebutuhan */
+    text-transform: uppercase; /* Membuat teks menjadi huruf besar semua */
+    margin-top: 50px;
+}
+
+
+.header-profil {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    font-style: oblique;
+}
+
+.form-select {
+    border-color: black;
+}
+.profile-section {
+    width: 200px; /* Sesuaikan dengan lebar yang Anda inginkan */
+    height: 200px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Opsional: Tambahkan garis tepi jika diperlukan */
+}
+
+.profile-image {
+    margin-top: 40%;
+    
+    
+    
+}
+
+.profile-image img {
+    width: 100%; /* Lebar gambar mengambil lebar dari parent (.profile-image) */
+    height: 100%; /* Tinggi gambar mengambil tinggi dari parent (.profile-image) */
+    object-fit: cover; /* Gambar akan di-stretch atau di-crop sesuai dengan parent */
+    border-radius: 50%; /* Untuk membuat gambar berbentuk lingkaran (opsional) */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    
+}
+
+.card {
+    /* border-color: rgb(177, 174, 174); */
+    /* width: 791px; */
+    opacity: 2;
+}
+
+.card-body{
+    opacity: 2;
+    width: 791px;
+    box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.container {
+    /* height: 525px; */
+    border-color: black;
+    justify-content: center;
+    min-height: 90vh;
+    margin-top: 50px;
+    margin-left:50px;
+}
+
+.profile-section {
+    float: left;
+    display: inline;
+    position: relative;
+    margin: 3px 0 0 0;
+    padding: 10px;
+    height: 152px;
+    /* width: 152px; */
+    text-align: center;
+    /* background: #f5f5f5; */
+    border-radius: 3px;
+    border: 2px dotted #dddbdb;
+    background-size: cover !important;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0px 0px 3px 0px #d3cfcf;
+}
+
+.cv-container{
+    /* width: 100%; 
+    height: 100%;  */
+    /* padding-top: 13px; 
+    padding-bottom: 23.01px; 
+    padding-left: 34px; 
+    padding-right: 35px;  */
+    background: #ffffff; 
+    width: 830px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    /* flex-direction: column;  */
+    /* justify-content: flex-start;  */
+    align-items: center; 
+    margin-left:500px;
+    /* display: inline-flex; */
+}
+
+.cv{
+    /* width: 791px;  */
+    height: 1181px; 
+    position: relative;
+    margin-left: 20px;
+    top: 20px;
+}
+
+
+.profile-container {
+    /* width: 414px; */
+    height: 128px;
+    left: 10px;
+    top: 0px;
+    position: absolute;
+}
+
+.profile-info {
+    position: absolute;
+}
+
+.role-info {
+    left: 150px;
+    top: 64px;
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.profile-image {
+    width: 131px;
+    height: 128px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    /* background: #9EB8D9; */
+    border-radius: 9999px;
+}
+
+.profile-image img {
+    width: 131px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.name-info {
+    left: 150px;
+    top: 29px;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    width: 300px;
+    font-weight: bold;
+}
+
+.text-profile{
+    right:500px;
+}
+
+.pengguna-container {
+    width: 788px;
+    height: 259px;
+    left: 0px;
+    top: 148px;
+    position: absolute;
+}
+
+.content-pengguna{
+    margin-left:10px;
+    margin-top:10px;
+}
+
+
+
+.header {
+    width: 700px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    position: relative;
+    width: 100%;
+}
+
+.header-background {
+    width: 791px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    position: relative;
+    background: #9EB8D9;
+    width: 100%;
+}
+
+.header-text {
+    left: 14px;
+    top: 10px;
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+.content {
+    width: 791px;
+    height: 219px;
+    left: 0px;
+    top: 40px;
+    position: absolute;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+    /* align-items: flex-start; */
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.info-label, .info-value {
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    /* margin-left: 10px; */
+}
+
+.info-value{
+    margin-right: 300px;
+}
+
+.education-box{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.keterampilan-box .info.with-margin {
+    margin-top: 20px;
+}
+
+
+.info-value-pendidikan{
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+.description-container {
+    width: 788px;
+    height: 103px;
+    left: 0px;
+    top: 40px;
+    position: relative;
+    margin-left: 10px;
+    height: auto; 
+    /* overflow: hidden; */
+}
+
+.description-text {
+    width: 788px;
+    height: 12.79px;
+    /* left: 14.05px; */
+    top: 12.79px;
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.d-container {
+    width: 791px;
+    height: 143px;
+    left: 0px;
+    top: 380px;
+    position: absolute;
+}
+
+.download{
+    margin-top:500px;
+    margin-right:25px;
+}
+
+#btn-print-this {
+    width: auto;
+    height: auto;
+    text-align: center;
+    /* atau */
+    /* width: auto; */ /* Gunakan width:auto agar tombol menyesuaikan ukuran dengan teks */
+}
+
+.education-container {
+    width: 791px;
+    height: 237px;
+    left: 0px;
+    top: 500px;
+    position: absolute;
+}
+
+.pekerjaan-container {
+    width: 791px;
+    height: 237px;
+    left: 10px;
+    top: 750px;
+    position: absolute;
+}
+
+.keterampilan-container {
+    width: 791px;
+    height: 237px;
+    left: 10px;
+    top: 955px;
+    position: absolute;
+}
+
+
+
+
