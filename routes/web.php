@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\KasirController;
+use App\Http\Controllers\TenanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +20,8 @@ Route::get('/', function () {
     return view('tampilanawal');
 })->name('home');
 
+// BARANG
+
 Route::get('/tambahbarang', [BarangController::class, 'tambahbarang'])->name('tambahbarang');
 Route::post('/insertdatabarang', [BarangController::class, 'insertdatabarang'])->name('insertdatabarang');
 
@@ -30,4 +34,13 @@ Route::get('/tampilanawal', function () {
     return view('tampilanawal');
 });
 
+// KASIR
+
+Route::get('/tambahkasir', [KasirController::class, 'tambahkasir'])->name('tambahkasir');
+Route::post('/insertdatakasir', [KasirController::class, 'insertdatakasir'])->name('insertdatakasir');
+
+// TENAN
+
+Route::get('/tambahtenan', [TenanController::class, 'tambahtenan'])->name('tambahtenan');
+Route::post('/insertdatatenan', [TenanController::class, 'insertdatatenan'])->name('insertdatatenan');
 
