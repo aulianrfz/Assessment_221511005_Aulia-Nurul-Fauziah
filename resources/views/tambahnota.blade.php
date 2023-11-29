@@ -6,10 +6,10 @@
         <div class="col-8; align-items: center;">
             <div class="card">
                 <div class="card-body">
-                    <form action="/insertdatabarang" method="POST" enctype="multipart/form-data"
+                    <form action="/insertdatanota" method="POST" enctype="multipart/form-data"
                         onsubmit="return validateForm()">
                         <div style="display: flex; align-items: center;">
-                            <h2 class="header-profil">DATA BARANG</h2>
+                            <h2 class="header-profil">DATA nota</h2>
                         </div>
                         <hr style="margin-top: 0px; margin-bottom: 20px; color:#000000;">
                         @csrf
@@ -18,33 +18,31 @@
                                 <div id="formRiwayatContainer">
 
                                     <div class="mb-3">
-                                        <label for="barang" class="form-label"></label>
+                                        <label for="nota" class="form-label"></label>
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th>Nama Barang</th>
-                                                    <th>Satuan</th>
-                                                    <th>Harga Satuan</th>
-                                                    <th>Stok</th>
+                                                    <th>TglNota</th>
+                                                    <th>JamNota</th>
+                                                    <th>JumlahBelanja</th>
+                                                    <th>Diskon</th>
                                                 </tr>
                                             </thead>
-                                            <tbody id="Pendidikan">
+                                            <tbody id="nota">
                                                 <tr>
-                                                    <td><input type="text" class="form-control"
-                                                            name="barang[0][NamaBarang]" placeholder="Nama Barang"
-                                                            required></td>
-                                                    <td><input type="text" class="form-control"
-                                                            name="barang[0][Satuan]" placeholder="Satuan" required></td>
-                                                    <td><input type="number" step="any" class="form-control"
-                                                            name="barang[0][HargaSatuan]" placeholder="HargaSatuan">
-                                                    </td>
+                                                    <td><input type="date" class="form-control" name="nota[0][TglNota]"
+                                                            placeholder="TglNota" required></td>
+                                                    <td><input type="time" class="form-control" name="nota[0][JamNota]"
+                                                            placeholder="JamNota" required></td>
                                                     <td><input type="number" class="form-control"
-                                                            name="barang[0][Stok]" placeholder="Stok">
-                                                    </td>
+                                                            name="nota[0][JumlahBelanja]" placeholder="JumlahBelanja"
+                                                            required></td>
+                                                    <td><input type="number" class="form-control" name="nota[0][Diskon]"
+                                                            placeholder="Diskon" required></td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <button type="button" class="btn btn-info" id="tambahbarang"
+                                        <button type="button" class="btn btn-info" id="tambahnota"
                                             style="width: 120px;">
                                             <img src="image/plus_.png" alt="Icon"
                                                 style="vertical-align: middle; margin-right: 10px; width: 20px;">
@@ -62,32 +60,30 @@
                                     <table class="table" style="margin-left: 10px; margin-right: 10px;">
                                         <thead>
                                             <tr>
-                                                <th scope="col">Kode Barang</th>
-                                                <th scope="col">Nama Barang</th>
-                                                <th scope="col">Satuan</th>
-                                                <th scope="col">Harga Satuan</th>
-                                                <th scope="col">Stok</th>
+                                                <th scope="col">Kode nota</th>
+                                                <th scope="col">TglNota</th>
+                                                <th scope="col">JamNota</th>
+                                                <th scope="col">JumlahBelanja</th>
+                                                <th scope="col">Diskon</th>
+                                                <th scope="col">Total</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @php
-                                            $no = 1;
-                                            @endphp
-
-                                            @foreach ($data as $barang)
+                                            @foreach ($data as $nota)
                                             <tr>
-                                                <td>{{ $barang-> KodeBarang }}</td>
-                                                <td>{{ $barang->NamaBarang }}</td>
-                                                <td>{{ $barang->Satuan }}</td>
-                                                <td>{{ $barang->HargaSatuan }}</td>
-                                                <td>{{ $barang->Stok }}</td>
-                                                <td>
-                                                    <a href="/tampilbarang/{{ $barang->id }}"
+                                                <td>{{ $nota-> KodeNota }}</td>
+                                                <td>{{ $nota->TglNota }}</td>
+                                                <td>{{ $nota->JamNota }}</td>
+                                                <td>{{ $nota->JumlahBelanja }}</td>
+                                                <td>{{ $nota->Diskon }}</td>
+                                                <td>{{ $nota->Total }}</td>
+                                                <!-- <td>
+                                                    <a href="/tampilnota/{{ $nota->id }}"
                                                         class="btn btn-warning text-black">Edit</a>
-                                                    <a href="/deletebarang/{{ $barang->id }}"
+                                                    <a href="/deletenota/{{ $nota->id }}"
                                                         class="btn btn-danger">Delete</a>
 
-                                                </td>
+                                                </td> -->
 
                                             </tr>
                                             @endforeach
@@ -102,14 +98,14 @@
         </div>
     </div>
     <script>
-        let barangIndex = 2;
+        let notaIndex = 2;
 
-        document.getElementById('tambahbarang').addEventListener('click', function () {
+        document.getElementById('tambahnota').addEventListener('click', function () {
             let newRow = document.createElement('tr');
             newRow.innerHTML = `
-        <td><input type="text" class="form-control" name="barang[${barangIndex}][pendidikanFormal]" placeholder="Nama Sekolah/Universitas"></td>
-        <td><input type="text" class="form-control" name="barang[${barangIndex}][jurusan]" placeholder=""></td>
-        <td><input type="text" class="form-control" name="barang[${barangIndex}][tahunPendidikan]" placeholder=""></td>
+        <td><input type="text" class="form-control" name="nota[${notaIndex}][pendidikanFormal]" placeholder="Namanota Sekolah/Universitas"></td>
+        <td><input type="text" class="form-control" name="nota[${notaIndex}][jurusan]" placeholder=""></td>
+        <td><input type="text" class="form-control" name="nota[${notaIndex}][tahunPendidikan]" placeholder=""></td>
     `;
             document.getElementById('Pendidikan').appendChild(newRow);
             riwayatPekerjaanIndex++;

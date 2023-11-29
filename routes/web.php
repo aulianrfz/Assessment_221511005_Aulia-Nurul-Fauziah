@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\KasirController;
 use App\Http\Controllers\TenanController;
+use App\Http\Controllers\NotaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,4 +44,10 @@ Route::post('/insertdatakasir', [KasirController::class, 'insertdatakasir'])->na
 
 Route::get('/tambahtenan', [TenanController::class, 'tambahtenan'])->name('tambahtenan');
 Route::post('/insertdatatenan', [TenanController::class, 'insertdatatenan'])->name('insertdatatenan');
+
+// NOTA
+
+Route::get('/tambahnota', [NotaController::class, 'tambahnota'])->name('tambahnota');
+Route::post('/insertdatanota', [NotaController::class, 'insertdatanota'])->name('insertdatanota');
+
 

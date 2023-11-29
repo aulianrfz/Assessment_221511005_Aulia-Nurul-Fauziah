@@ -36,7 +36,7 @@
                                                     <td><input type="text" class="form-control"
                                                             name="barang[{{ $dataBarang->id }}][NamaBarang]" placeholder="Nama Barang" value="{{ $dataBarang->NamaBarang }}"
                                                             required></td>
-                                                    <td><input type="number" class="form-control"
+                                                    <td><input type="text" class="form-control"
                                                             name="barang[{{ $dataBarang->id }}][Satuan]" placeholder="Satuan" value="{{ $dataBarang->Satuan }}" required></td>
                                                     <td><input type="number" class="form-control"
                                                             name="barang[{{ $dataBarang->id }}][HargaSatuan]" placeholder="HargaSatuan" value="{{ $dataBarang->HargaSatuan }}">
